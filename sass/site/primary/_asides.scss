@@ -1,0 +1,16 @@
+.blog .format-aside .entry-title,
+.blog .format-aside .entry-permalink,
+.archive .format-aside .entry-title,
+.archive .format-aside .entry-permalink{
+	display: none;
+}
+
+.blog .format-status .entry-title,
+.archive .format-status .entry-title{
+	display: none;
+}
+
+.blog .format-link .entry-permalink,
+.archive .format-link .entry-permalink{
+	display: none;
+}

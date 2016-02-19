@@ -1,0 +1,17 @@
+.sidebar-content{
+	.content-area {
+		order: 1;
+
+		@include media-breakpoint-up(md){
+			order: 2;
+		}
+	}
+
+	.widget-area {
+		order: 2;
+
+		@include media-breakpoint-up(md){
+			order: 1;
+		}
+	}
+}

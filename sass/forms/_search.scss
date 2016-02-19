@@ -1,0 +1,30 @@
+.search-form{
+	position: relative;
+	width: 100%;
+	max-width: 500px;
+
+	.search-field{
+		width: 100%;
+		border: none;
+		padding: 15px 50px 15px 25px;
+	}
+
+	.search-submit{
+		position: absolute;
+		top: 0;
+		right: 0;
+		background: none;
+		border: none;
+		@include font-size(1.125);
+		line-height: 1.1;
+		padding-left: 10px;
+		padding-right: 22px;
+		height: 100%;
+		color: $color__text-input;
+		@include transition(.3s);
+
+		&:hover {
+			color: $color__link;
+		}
+	}
+}

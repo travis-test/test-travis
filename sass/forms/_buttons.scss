@@ -1,0 +1,33 @@
+.btn,
+button.submit-comment,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	@include font-size(1.125);
+	line-height: 1.1;
+	font-weight: 500;
+	color: $color__link-hover;
+	text-transform: uppercase;
+	display: inline-block;
+	letter-spacing: 0.8px;
+	background: none;
+	border: none;
+	@include transition(.3s);
+
+	&:after {
+		display: inline-block;
+		content: '\f178';
+		font-family: $fa;
+		margin-left: 15px;
+	}
+
+	&:visited,
+	&:focus{
+		color: $color__link-hover;
+	}
+
+	&:hover,
+	&:active{
+		color: $color__link;
+	}
+}

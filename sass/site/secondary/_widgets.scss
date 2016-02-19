@@ -1,0 +1,125 @@
+.widget-area{
+	align-self: flex-start;
+	margin-top: 30px;
+	@include media-breakpoint-up(md){
+		margin-top: 0;
+	}
+	&_inner{
+		background: $color__background-sidebar;
+		padding: 45px 20px;
+		border-bottom: 6px solid $color__primary;
+		@include media-breakpoint-up(lg){
+			padding: 45px 40px;
+		}
+	}
+}
+
+.widget {
+	margin: 0 0 45px;
+
+	ul{
+		margin: 0;
+	}
+
+	a{
+		color: $color__text-main;
+		&:hover{
+			color: $color__link;
+		}
+	}
+
+	/* Make sure select elements fit in widgets. */
+	select {
+		max-width: 100%;
+	}
+}
+.widget-area{
+	section.widget:last-child {
+		@include media-breakpoint-up(md){
+		margin-bottom: 247px;
+		}
+	}
+}
+
+.widget-title {
+	position: relative;
+	text-transform: uppercase;
+	margin-bottom: 8px;
+
+	&:before{
+		content: '';
+		position: absolute;
+		width: 55px;
+		height: 2px;
+		bottom: 8px;
+		left: 0;
+		background: $color__link;
+	}
+}
+
+.widget_recent_comments{
+	.comment-author-link{
+		color: $color__text-headings;
+		text-transform: capitalize;
+
+		a{
+			color: $color__text-headings;
+			&:hover{
+				color: $color__link;
+			}
+		}
+	}
+}
+
+.widget_calendar{
+	table#wp-calendar{
+		caption{
+			font-weight: 700;
+			text-transform: uppercase;
+			color: $color__text-headings;
+		}
+		thead{
+			color: $color__text-headings;
+		}
+		tbody{
+			text-align: center;
+
+			td a{
+				display: block;
+				background: $color__link-hover;
+				color: #fff;
+				font-weight: 400;
+
+				&:hover{
+					background: $color__link;
+				}
+			}
+		}
+		tfoot{
+			font-weight: 700;
+			td{
+				a{
+					color: $color__text-headings;
+					text-transform: uppercase;
+					&:hover{
+						color: $color__link;
+					}
+				}
+			}
+			td#next{
+				text-align: right;
+			}
+		}
+	}
+}
+
+.widget_tag_cloud{
+	.tagcloud{
+		padding-top: 7px;
+	}
+}
+
+.widget_search{
+	margin-bottom: 59px;
+}
+
